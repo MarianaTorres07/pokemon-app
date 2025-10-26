@@ -1,0 +1,36 @@
+/* Estilos para el contenedor del buscador */
+.input_buscar{
+    background-color: #f2f2f2;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 12px;
+    flex: .4;
+    font-size: 16px;
+    box-shadow: 4px 4px 16px #00000020;
+
+}
+
+/* Estilos para los botones de modo de vista */
+.view_mode_buttons{
+    display: flex;
+    gap: 10px;
+}
+
+.view_btn{
+    background-color: #f2f2f2;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 16px;
+    box-shadow: 4px 4px 16px #00000020;
+    cursor: pointer;
+}
+
+.view-btn:hover {
+    background-color: #f8f8f8;
+}
+
+.view-btn.active {
+    background-color: #e3350d;
+    color: white;
+}
