@@ -2,6 +2,8 @@
 
 Una aplicación web de Pokédex construida con React.js como prueba técnica, consumiendo la PokeAPI.
 
+Link al Deployment: https://pokedex-app-mar.netlify.app/
+
 ## 🚀 Características Implementadas
 
 ### ✅ Completado
