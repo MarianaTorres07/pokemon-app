@@ -1,16 +1,46 @@
-# React + Vite
+# 🎯 Pokédex App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Una aplicación web de Pokédex construida con React.js como prueba técnica, consumiendo la PokeAPI.
 
-Currently, two official plugins are available:
+## 🚀 Características Implementadas
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### ✅ Completado
+- **Búsqueda en tiempo real** de Pokémon por nombre
+- **Dos vistas de visualización**: Cuadrícula y Lista 
+- **Diseño responsive** con CSS Grid y Flexbox
+- **Integración con PokeAPI** y manejo de estados
+- **Componentes reutilizables** y arquitectura limpia
+- **Material-UI** en componentes de interfaz
 
-## React Compiler
+### 🎯 Vista Cuadrícula
+- Tarjetas con imagen, nombre, tipos y habilidades
+- Diseño de grid responsive (4 columnas en desktop, 1 en móvil)
+- Efectos hover y transiciones CSS
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### 📋 Vista Lista
+- Tabla con headers: #, Nombre, Vista Previa, Tipos, Habilidades
+- Diseño adaptativo para diferentes dispositivos
 
-## Expanding the ESLint configuration
+## 🛠️ Tecnologías Utilizadas
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **React.js** - Librería principal
+- **Vite** - Tooling de desarrollo
+- **CSS3** - Styling con Grid y Flexbox
+- **Material-UI** - Componentes de UI
+- **PokeAPI** - Fuente de datos
+- **Git** - Control de versiones
+
+## 📦 Instalación y Uso
+
+```bash
+# Clonar el repositorio
+git clone https://github.com/TU_USUARIO/pokemon-app.git
+
+# Navegar al directorio
+cd pokemon-app
+
+# Instalar dependencias
+npm install
+
+# Ejecutar en modo desarrollo
+npm run dev
