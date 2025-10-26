@@ -7,7 +7,6 @@ Una aplicación web de Pokédex construida con React.js como prueba técnica, co
 ### ✅ Completado
 - **Búsqueda en tiempo real** de Pokémon por nombre
 - **Dos vistas de visualización**: Cuadrícula y Lista 
-- **Diseño responsive** con CSS Grid y Flexbox
 - **Integración con PokeAPI** y manejo de estados
 - **Componentes reutilizables** y arquitectura limpia
 - **Material-UI** en componentes de interfaz

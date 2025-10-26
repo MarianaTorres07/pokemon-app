@@ -1,21 +1,19 @@
 Contenedor principal de la aplicación
 .app_container {
-    max-width: 1200px;
-    margin: 0 auto;
+    max-width: 100%;
     padding: 20px;
 }
 
 /* Card principal que envuelve toda la aplicación */
 .main_card {
-    background-color: white;
+   background-color: white;
     border-radius: 12px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-    padding: 0;
     overflow: hidden;
 }
 
 
 /* Contenido de la card */
 .card_content {
-    padding: 50px;
+    padding: 20px;
 }

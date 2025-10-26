@@ -55,13 +55,13 @@ function PokemonListItem({id, name, image,types, abilities}) {
     const safeAbilities = abilities || [];
 
     return (
-        <div className="pokemon_list_item">
-            <span className="pokemon_number me-3">{id}</span>
-            <h2 className="pokemon_name_list">{name}</h2>
-            <img src={image} alt={name} width="80" className="pokemon_image_list"/>
+        <div className="pokemon_list_item d-flex align-items-center p-3 border-bottom">
+            <span className="pokemon_number me-3 fw-bold">{id}</span>
+            <h2 className="pokemon_name_list flex-grow-1 text-capitalize fw-bold">{name}</h2>
+            <img src={image} alt={name} width="80" className="pokemon_image_list mx-3"/>
 
-            <div className="pokemon_types_cell">
-                <div className="pokemon_types">
+            <div className="pokemon_types_cell mx-3 d-none d-md-block">
+                <div className="pokemon_types d-flex flex-wrap gap-1">
                     {safeTypes.map((typeInfo, index) => (
                          <span key={index}>
                             {typeInfo?.type?.name || 'Normal'}
@@ -71,7 +71,7 @@ function PokemonListItem({id, name, image,types, abilities}) {
             </div>
             
             <div className="pokemon_abilities_cell mx-3 d-none d-lg-block">
-                <div className="pokemon_abilities">
+                <div className="pokemon_abilities d-flex flex-wrap gap-1">
                     {safeAbilities.slice(0, 2).map((abilityInfo, index) => (
                         <span key={index}>
                              {abilityInfo?.ability?.name || 'Unknown'}
@@ -87,7 +87,7 @@ function PokemonListItem({id, name, image,types, abilities}) {
 // Headers para la vista lista
 function ListHeaders() {
     return (
-        <div className="list_headers">
+        <div className="list_headers d-flex align-items-center p-3 bg-secondary text-white rounded-top fw-bold">
             <span className="header_number me-3">#</span>
             <span className="header_name flex-grow-1">Nombre</span>
             <span className="header_preview mx-3">Vista Previa</span>
@@ -168,10 +168,14 @@ export default function PokemonList({searchTerm, viewMode}) {
 
             {filteredPokemons.map(pokemon => 
                 viewMode === 'list' ?
-                <PokemonListItem key={pokemon.id} {...pokemon}/> :
-                <PokemonGrid key={pokemon.id} {...pokemon} />
-        ) 
-            }     
+                <div className="col-12" key={pokemon.id}>
+                <PokemonListItem {...pokemon}/>
+                </div> :
+                <div className="col-12 col-sm-6 col-md-4 col-lg-3" key={pokemon.id}>
+                <PokemonGrid {...pokemon} />
+                </div>
+         )  }  
+ 
         </section>
     )
 }
